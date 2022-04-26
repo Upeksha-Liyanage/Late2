@@ -63,7 +63,7 @@ public class EmployeeService {
 
 			// Prepare the html table to be displayed
 			output = "<table border=\"1\"><tr><th>Employee ID</th><th>User type</th><th>Employee Email</th><th>Password</th><th>Contact no"
-					+ "</th><th>First name</th><th>Last name</th><th>NIC</th><th>Sex</th><th>Specialization</th><th>Update</th><th>Remove</th></tr>";
+					+ "</th><th>First name</th><th>Last name</th><th>NIC</th><th>Update</th><th>Remove</th></tr>";
 
 			String query = "select * from employee";
 			Statement stmt = con.createStatement();

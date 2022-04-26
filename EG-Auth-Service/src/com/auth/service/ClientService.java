@@ -71,7 +71,7 @@ public class ClientService {
 				
 				// Prepare the html table to be displayed
 				output = "<table border=\"1\"><tr><th>Client ID</th><th>User type</th><th>Client Email</th><th>Password</th><th>Contact no"
-						+ "</th><th>First name</th><th>Last name</th><th>DOB</th><th>Age</th><th>sex</th><th>NIC</th><th>Address</th><th>Update</th><th>Remove</th></tr>";
+						+ "</th><th>First name</th><th>Last name</th><th>ElectroId</th><th>NIC</th><th>Address</th><th>Update</th><th>Remove</th></tr>";
 				
 				String query = "select * from client";
 				Statement stmt = con.createStatement();
