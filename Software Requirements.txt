@@ -1,0 +1,6 @@
+JDK tool kit 8
+my sql connector
+postman
+apache server 
+my sql server
+eclipse IDE
