@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "dfbcafa9-84fb-49e3-ad54-a7e398db032f",
+		"name": "invoicepayment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BillDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/invoice/del-inv/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"invoice",
+						"del-inv",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/invoice/inv-payment/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"invoice",
+						"inv-payment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAllPaymentDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/invoice/inv-find",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"invoice",
+						"inv-find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePayment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"invDate\": \"04/26/2022 10:01:07 PM\",\r\n    \"customerId\": \"C-001\",\r\n    \"payType\": \"Card\",\r\n    \"amount\": 5000.0,\r\n    \"cardNo\": \"1234-5678-9112-8907\",\r\n    \"cvv\": \"890\",\r\n    \"cardExpireDate\": \"2025-02-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/invoice/update-inv/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"invoice",
+						"update-inv",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SavePayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": \"C-002\",\r\n    \"payType\": \"Card\",\r\n    \"amount\": 6000,\r\n    \"cardNo\": \"7890-3456-9112-8907\",\r\n    \"cvv\": \"260\",\r\n    \"cardExpireDate\": \"2023-02-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/invoice/inv-save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"invoice",
+						"inv-save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
